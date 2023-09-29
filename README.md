@@ -1,6 +1,17 @@
 # Kenny Assets Godot Plugin
 
-This is a Godot plugin designed to make using the Kenny All In One Asset Packer easier.
+This is a Godot plugin designed to make using the Kenney Game Assets All-in-1 pack easier.
+
+## Features
+
+You can:
+- Select any type of asset you need. (2D/3D asset, audio, ...)
+- Select any collection you need. (filtered by asset type)
+- Open the collection folder directly.
+- Show the preview of the collection.
+- Open the collection's asset folder.
+- Automatically import it into your project.
+
 
 ## Installation
 
