@@ -1,0 +1,119 @@
+[gd_scene load_steps=2 format=3 uid="uid://bse5nhjufqjv6"]
+
+[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/ViewerPanel.cs" id="1_unk4x"]
+
+[node name="ViewerPanel" type="HBoxContainer" node_paths=PackedStringArray("optionAssetType", "optionAssetName", "buttonFolder", "buttonPreview", "buttonAssets", "buttonImport", "popupImportFrom", "popupImportTo", "checkBoxImport")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_unk4x")
+optionAssetType = NodePath("VBox/OptionAssetType")
+optionAssetName = NodePath("VBox/OptionAssetName")
+buttonFolder = NodePath("VBox/CenterContainer/VBoxContainer/ButtonFolder")
+buttonPreview = NodePath("VBox/CenterContainer/VBoxContainer/ButtonPreview")
+buttonAssets = NodePath("VBox/CenterContainer/VBoxContainer/ButtonAssets")
+buttonImport = NodePath("VBox/CenterContainer/VBoxContainer/ButtonImport")
+popupImportFrom = NodePath("InportPopupFrom")
+popupImportTo = NodePath("InportPopupTo")
+checkBoxImport = NodePath("")
+
+[node name="0" type="Control" parent="."]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="0" type="Control" parent="VBox"]
+visible = false
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBox"]
+layout_mode = 2
+text = "Asset type:"
+
+[node name="OptionAssetType" type="OptionButton" parent="VBox"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+item_count = 5
+popup/item_0/text = "2D assets"
+popup/item_0/id = 0
+popup/item_1/text = "3D assets"
+popup/item_1/id = 1
+popup/item_2/text = "Archive"
+popup/item_2/id = 2
+popup/item_3/text = "Audio"
+popup/item_3/id = 3
+popup/item_4/text = "Other"
+popup/item_4/id = 4
+
+[node name="1" type="Control" parent="VBox"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBox"]
+layout_mode = 2
+text = "Collection name:"
+
+[node name="OptionAssetName" type="OptionButton" parent="VBox"]
+custom_minimum_size = Vector2(430, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="2" type="Control" parent="VBox"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="VBox"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBox/CenterContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="ButtonFolder" type="Button" parent="VBox/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 6
+text = "Open folder"
+
+[node name="ButtonPreview" type="Button" parent="VBox/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 6
+text = "Show preview"
+
+[node name="ButtonAssets" type="Button" parent="VBox/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 6
+text = "Show assets"
+
+[node name="ButtonImport" type="Button" parent="VBox/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 6
+text = "Import to project"
+
+[node name="4" type="Control" parent="VBox"]
+layout_mode = 2
+
+[node name="1" type="Control" parent="."]
+layout_mode = 2
+
+[node name="InportPopupFrom" type="FileDialog" parent="."]
+position = Vector2i(0, 36)
+size = Vector2i(452, 162)
+access = 2
+
+[node name="InportPopupTo" type="FileDialog" parent="."]
+position = Vector2i(0, 36)
+size = Vector2i(452, 162)
+access = 2

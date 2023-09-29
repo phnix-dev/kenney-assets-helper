@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Kenny Assets Plugin"
+run/main_scene="res://addons/kenney_assets_viewer/dock.tscn"
+config/features=PackedStringArray("4.1", "C#", "Mobile")
+config/icon="res://addons/kenney_assets_viewer/icon.svg"
+
+[dotnet]
+
+project/assembly_name="Kenny Asset Plugin"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/kenney_assets_viewer/plugin.cfg")
+
+[filesystem]
+
+import/fbx/enabled=false
+
+[network]
+
+limits/debugger/max_chars_per_second=65536
+
+[rendering]
+
+renderer/rendering_method="mobile"

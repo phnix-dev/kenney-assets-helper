@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://bux0k722grl2k"]
+
+[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/ZipPanel.cs" id="1_60ajr"]
+[ext_resource type="StyleBox" uid="uid://bghx8jdg6ods1" path="res://addons/kenney_assets_viewer/panel.tres" id="2_fxh6v"]
+
+[node name="ZipPanel" type="VBoxContainer" node_paths=PackedStringArray("buttonOpenUserFolder")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_60ajr")
+buttonOpenUserFolder = NodePath("CenterContainer/ButtonUserFolder")
+
+[node name="0" type="Control" parent="."]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("2_fxh6v")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "This software works with the zip archive of Kenney Game Assets All-in-1 version 1.8.
+Please add it to your user folder and restart the plugin."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="1" type="Control" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ButtonUserFolder" type="Button" parent="CenterContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 6
+text = "  Click there to open the user folder  "
+
+[node name="2" type="Control" parent="."]
+visible = false
+layout_mode = 2

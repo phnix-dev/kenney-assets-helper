@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://5hkaedmiq213"]
+
+[ext_resource type="StyleBox" uid="uid://bghx8jdg6ods1" path="res://addons/kenney_assets_viewer/panel.tres" id="1_agub3"]
+[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/UnzipPanel.cs" id="2_rsp6x"]
+
+[node name="UnzipPanel" type="Panel" node_paths=PackedStringArray("labelWait")]
+custom_minimum_size = Vector2(300, 100)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("1_agub3")
+script = ExtResource("2_rsp6x")
+labelWait = NodePath("Label")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -117.0
+offset_top = -15.0
+offset_right = 126.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Unzipping. Please wait..."
