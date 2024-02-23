@@ -12,8 +12,8 @@ config_version=5
 
 config/name="Kenny Assets Plugin"
 run/main_scene="res://addons/kenney_assets_viewer/dock.tscn"
-config/features=PackedStringArray("4.1", "C#", "Mobile")
-config/icon="res://addons/kenney_assets_viewer/icon.svg"
+config/features=PackedStringArray("4.2", "C#", "Mobile")
+config/icon="res://icon.png"
 
 [dotnet]
 

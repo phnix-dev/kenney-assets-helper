@@ -1,6 +1,6 @@
-# Kenny Assets Godot Plugin
+# Kenny Assets Helper
 
-This is a Godot plugin designed to make using the Kenney Game Assets All-in-1 pack easier.
+This is a Godot addon designed to make using the Kenney Game Assets All-in-1 pack easier.
 
 ## Features
 
@@ -27,3 +27,11 @@ You can:
 
 ## Screenshots
 ![image](https://github.com/phnix-dev/kenney-assets-godot-plugin/blob/main/readme/screenshot_0.png)
+
+## Roadmap
+
+- [ ] Convert the project to GDScript.
+
+## License
+
+This project is licensed under the terms of the [Mozilla Public License, version 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
