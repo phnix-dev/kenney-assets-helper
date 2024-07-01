@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bse5nhjufqjv6"]
 
-[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/ViewerPanel.cs" id="1_unk4x"]
+[ext_resource type="Script" path="res://addons/kenney_assets_helper/scripts/ViewerPanel.cs" id="1_unk4x"]
 
 [node name="ViewerPanel" type="HBoxContainer" node_paths=PackedStringArray("optionAssetType", "optionAssetName", "buttonFolder", "buttonPreview", "buttonAssets", "buttonImport", "popupImportFrom", "popupImportTo", "checkBoxImport")]
 anchors_preset = 15

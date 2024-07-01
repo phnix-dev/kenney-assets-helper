@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Kenny Assets Plugin"
-run/main_scene="res://addons/kenney_assets_viewer/dock.tscn"
+run/main_scene="res://addons/kenney_assets_helper/dock.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://icon.png"
 
@@ -21,7 +21,7 @@ project/assembly_name="Kenny Asset Plugin"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/kenney_assets_viewer/plugin.cfg")
+enabled=PackedStringArray("res://addons/kenney_assets_helper/plugin.cfg")
 
 [filesystem]
 

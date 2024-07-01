@@ -8,7 +8,7 @@ internal partial class Main : Control
 	// Constants
 	public const string FILE_ZIP = "Kenney Game Assets All-in-1 1.8.0.zip";
 	public const string FOLDER_ZIP = "assets";
-	public const string FOLDER_ASSETS = "kenney_assets_viewer";
+	public const string FOLDER_ASSETS = "kenney_assets_helper";
 
 	public static string UserFolder { get; private set; }
 	public static string UserFolderAssets { get; private set; }

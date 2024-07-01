@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://5hkaedmiq213"]
 
-[ext_resource type="StyleBox" uid="uid://bghx8jdg6ods1" path="res://addons/kenney_assets_viewer/panel.tres" id="1_agub3"]
-[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/UnzipPanel.cs" id="2_rsp6x"]
+[ext_resource type="StyleBox" uid="uid://bghx8jdg6ods1" path="res://addons/kenney_assets_helper/panel.tres" id="1_agub3"]
+[ext_resource type="Script" path="res://addons/kenney_assets_helper/scripts/UnzipPanel.cs" id="2_rsp6x"]
 
 [node name="UnzipPanel" type="Panel" node_paths=PackedStringArray("labelWait")]
 custom_minimum_size = Vector2(300, 100)

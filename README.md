@@ -5,13 +5,13 @@ This is a Godot addon designed to make using the Kenney Game Assets All-in-1 pac
 ## Features
 
 You can:
+
 - Select any type of asset you need. (2D/3D asset, audio, ...)
 - Select any collection you need. (filtered by asset type)
 - Open the collection folder directly.
 - Show the preview of the collection.
 - Open the collection's asset folder.
 - Automatically import it into your project.
-
 
 ## Installation
 
@@ -26,6 +26,7 @@ You can:
 - When selecting a folder in the import dialog box, you **MUST** be inside the folder and select "Select Current Folder", if you click on "Select This Folder" it will not work!
 
 ## Screenshots
+
 ![image](./readme/screenshot_0.png)
 
 ## Roadmap

@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://b7b83bcp6uanp"]
 
-[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/Tabs.cs" id="1_4uya8"]
-[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/Main.cs" id="1_q5bi7"]
-[ext_resource type="PackedScene" uid="uid://5hkaedmiq213" path="res://addons/kenney_assets_viewer/scenes/unzip_panel.tscn" id="4_mhjha"]
-[ext_resource type="PackedScene" uid="uid://bux0k722grl2k" path="res://addons/kenney_assets_viewer/scenes/zip_panel.tscn" id="5_eltet"]
-[ext_resource type="PackedScene" uid="uid://bse5nhjufqjv6" path="res://addons/kenney_assets_viewer/scenes/viewer_panel.tscn" id="6_np7wn"]
+[ext_resource type="Script" path="res://addons/kenney_assets_helper/scripts/Tabs.cs" id="1_4uya8"]
+[ext_resource type="Script" path="res://addons/kenney_assets_helper/scripts/Main.cs" id="1_q5bi7"]
+[ext_resource type="PackedScene" uid="uid://5hkaedmiq213" path="res://addons/kenney_assets_helper/scenes/unzip_panel.tscn" id="4_mhjha"]
+[ext_resource type="PackedScene" uid="uid://bux0k722grl2k" path="res://addons/kenney_assets_helper/scenes/zip_panel.tscn" id="5_eltet"]
+[ext_resource type="PackedScene" uid="uid://bse5nhjufqjv6" path="res://addons/kenney_assets_helper/scenes/viewer_panel.tscn" id="6_np7wn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3jets"]
 
@@ -29,7 +29,6 @@ tabs_visible = false
 script = ExtResource("1_4uya8")
 
 [node name="ZipPanel" parent="Tabs" instance=ExtResource("5_eltet")]
-visible = false
 layout_mode = 2
 
 [node name="UnzipPanel" parent="Tabs" instance=ExtResource("4_mhjha")]
@@ -37,4 +36,5 @@ visible = false
 layout_mode = 2
 
 [node name="ViewerPanel" parent="Tabs" instance=ExtResource("6_np7wn")]
+visible = false
 layout_mode = 2

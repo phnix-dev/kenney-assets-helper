@@ -9,7 +9,7 @@ namespace KennyAssetViewer;
 [Tool]
 internal partial class KenneyAssetsPlugin : EditorPlugin
 {
-	private const string PATH_TO_DOCK = "res://addons/kenney_assets_viewer/dock.tscn";
+	private const string PATH_TO_DOCK = "res://addons/kenney_assets_helper/dock.tscn";
 	
 	private Control dock;
 

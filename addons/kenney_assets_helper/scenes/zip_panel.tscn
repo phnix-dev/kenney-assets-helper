@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bux0k722grl2k"]
 
-[ext_resource type="Script" path="res://addons/kenney_assets_viewer/scripts/ZipPanel.cs" id="1_60ajr"]
-[ext_resource type="StyleBox" uid="uid://bghx8jdg6ods1" path="res://addons/kenney_assets_viewer/panel.tres" id="2_fxh6v"]
+[ext_resource type="Script" path="res://addons/kenney_assets_helper/scripts/ZipPanel.cs" id="1_60ajr"]
+[ext_resource type="StyleBox" uid="uid://bghx8jdg6ods1" path="res://addons/kenney_assets_helper/panel.tres" id="2_fxh6v"]
 
 [node name="ZipPanel" type="VBoxContainer" node_paths=PackedStringArray("buttonOpenUserFolder")]
 anchors_preset = 15
