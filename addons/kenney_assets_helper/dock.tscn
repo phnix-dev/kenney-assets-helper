@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://b7b83bcp6uanp"]
 
-[ext_resource type="Script" path="res://addons/kenney_assets_helper/scripts/Tabs.cs" id="1_4uya8"]
-[ext_resource type="Script" path="res://addons/kenney_assets_helper/scripts/Main.cs" id="1_q5bi7"]
+[ext_resource type="Script" uid="uid://cuudh721xwoo3" path="res://addons/kenney_assets_helper/scripts/Tabs.cs" id="1_4uya8"]
+[ext_resource type="Script" uid="uid://bflylc5j3ynfo" path="res://addons/kenney_assets_helper/scripts/Main.cs" id="1_q5bi7"]
 [ext_resource type="PackedScene" uid="uid://5hkaedmiq213" path="res://addons/kenney_assets_helper/scenes/unzip_panel.tscn" id="4_mhjha"]
 [ext_resource type="PackedScene" uid="uid://bux0k722grl2k" path="res://addons/kenney_assets_helper/scenes/zip_panel.tscn" id="5_eltet"]
 [ext_resource type="PackedScene" uid="uid://bse5nhjufqjv6" path="res://addons/kenney_assets_helper/scenes/viewer_panel.tscn" id="6_np7wn"]
@@ -25,16 +25,20 @@ tabs = NodePath("Tabs")
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxEmpty_r71gq")
+current_tab = 0
 tabs_visible = false
 script = ExtResource("1_4uya8")
 
 [node name="ZipPanel" parent="Tabs" instance=ExtResource("5_eltet")]
 layout_mode = 2
+metadata/_tab_index = 0
 
 [node name="UnzipPanel" parent="Tabs" instance=ExtResource("4_mhjha")]
 visible = false
 layout_mode = 2
+metadata/_tab_index = 1
 
 [node name="ViewerPanel" parent="Tabs" instance=ExtResource("6_np7wn")]
 visible = false
 layout_mode = 2
+metadata/_tab_index = 2

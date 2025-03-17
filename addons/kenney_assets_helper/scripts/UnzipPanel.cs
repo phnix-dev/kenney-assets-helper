@@ -1,9 +1,13 @@
+// ╔═════════════════════════════════════════════════════════════════════╗
+// ║ This file is licensed under the Mozilla Public License Version 2.0. ║
+// ╚═════════════════════════════════════════════════════════════════════╝
+
 #if TOOLS
 
 using System.IO.Compression;
 using System.Threading.Tasks;
 
-namespace KennyAssetViewer;
+namespace KenneyAssetsHelper;
 
 [Tool]
 internal partial class UnzipPanel : Node

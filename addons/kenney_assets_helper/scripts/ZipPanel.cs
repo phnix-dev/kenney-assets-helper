@@ -1,6 +1,10 @@
+// ╔═════════════════════════════════════════════════════════════════════╗
+// ║ This file is licensed under the Mozilla Public License Version 2.0. ║
+// ╚═════════════════════════════════════════════════════════════════════╝
+
 #if TOOLS
 
-namespace KennyAssetViewer;
+namespace KenneyAssetsHelper;
 
 [Tool]
 internal partial class ZipPanel : Control
@@ -15,9 +19,8 @@ internal partial class ZipPanel : Control
 	[Export] private Button buttonOpenUserFolder;
 
 	// Member variables
-
-
-
+	
+	
 	public override void _Ready()
 	{
 		buttonOpenUserFolder.Pressed += OnButtonOpenUserFolder_Pressed;
